@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="corona.png">
+  <title>Covid 19</title>
+</head>
+<body>
+  <div class="main-content">
+    
+    {{>header}}
+     <div id="form">
+      <p>Search for a country to look up at the Covid 19 status</p>
+      <form>
+        <input id="country" type="text" placeholder="Search....">
+        <button id="search">Search</button>
+      </form>
+    </div>
+    <div id="status">
+    <p id="totalCases"></p>
+    <p id="todayCases"></p>
+    <p id="deaths"></p>
+    <p id="activeCases"></p>
+    </div>
+  </div>
+ 
+    {{>footer}}
+    <script src="app.js">
+    </script>
+</body>
+</html>
