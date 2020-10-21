@@ -6,7 +6,7 @@ const Covid = require('./corona')
 const app = express();
 const viewsPath = path.join(__dirname, '/templates/views')
 const staticPath = path.join(__dirname, '/templates/views')
-const port = process.env.port || 3000
+const port = process.env.PORT || 3000
 const partialPath = path.join(__dirname, '/templates/partials')
 
 app.set('view engine', 'hbs')
